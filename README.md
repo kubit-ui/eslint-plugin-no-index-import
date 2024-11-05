@@ -31,9 +31,9 @@ Add `no-index-import` to the `plugins` array and configure the rule in the `rule
 ```js
 module.exports = {
   // Other ESLint configurations...
-  plugins: ['no-index-import'],
+  plugins: ['@kubit-ui-web/no-index-import'],
   rules: {
-    'no-index-import/no-index-import': 'error',
+    '@kubit-ui-web/no-index-import/no-index-import': 'error',
   },
 };
 ```
@@ -45,9 +45,9 @@ You can also configure aliases and ignore specific imports:
 ```js
 module.exports = {
   // Other ESLint configurations...
-  plugins: ['no-index-import'],
+  plugins: ['@kubit-ui-web/no-index-import'],
   rules: {
-    'no-index-import/no-index-import': [
+    '@kubit-ui-web/no-index-import/no-index-import': [
       'error',
       {
         aliases: {
@@ -84,9 +84,13 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'no-index-import'],
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    '@kubit-ui-web/no-index-import/no-index-import',
+  ],
   rules: {
-    'no-index-import/no-index-import': [
+    '@kubit-ui-web/no-index-import/no-index-import': [
       'error',
       {
         aliases: {
