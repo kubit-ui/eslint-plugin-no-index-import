@@ -1,6 +1,6 @@
 {
   "name": "@kubit-ui-web/eslint-plugin-no-index-import",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An ESLint plugin to disallow imports from index files.",
   "main": "index.js",
   "keywords": [
